@@ -1,12 +1,18 @@
-# Spark
+# Spark - A Neurodiversity-Affirming Community App for ADHD Girls
 
-Spark is a native iOS app for ADHD girls and gender-expansive youth. It treats focus, feelings, routines, and friendships as one supportive place, with a warm, strengths-based tone.
+What does an app designed by and for ADHD girls look like when belonging matters as much as productivity? 
+
+Spark is a native iOS app for empowering ADHD girls. Explore Spark Circles for affirmations and body doubling on tasks with trusted friends, small-step Quests, Focus Realms with music, Feelings Check, Period Tracker, Neurodiversity Corner for strengths-based understanding, Discover Opportunities for camps and programs, and more. 
+
+Built by a 2e/ADHD student with neuromuscular deficits in her right hand, accessibility is built into Spark’s interface, with special care for hand mobility, sensory overwhelm, and cognitive access. Spark was 1 of 5 selected in a highly competitive national challenge for live stage demo at #TodayAtApple (San Francisco Union Square) by Kode With Klossy and Apple mentors. https://www.youtube.com/watch?v=REu42dOHBcc. Lived experiences, feedback through co-design, and the Apple Union Square demo shaped Spark v1.0.
 
 The app is built with SwiftUI. Personal data stays on the device.
 
-## Features
+## v1.0 Features
 
-**Home** opens with a time-based greeting, a daily affirmation, and a Coming up list that gathers nearby events, cycle predictions, quest reminders, and enabled reminders. From here you can open Spark Circle, Discover Opportunities, and the toolkit.
+**Home** opens with a time-based greeting, a daily affirmation, and a Coming up list that gathers quest reminders, events, cycle predictions, and more. From here you can open Spark Circle, Discover Opportunities, and the toolkit.
+
+**Spark Circle** is an invite-only space for friends to help with body doubling on tasks, sending short encouragements, and sharing quests. Circles and messages live on the device. 
 
 **Quests** break a bigger goal into small steps. Checking off steps earns Sparks. Quests can carry reminders and be shared with a circle.
 
@@ -14,21 +20,21 @@ The app is built with SwiftUI. Personal data stays on the device.
 
 **Feelings** is a non-clinical check-in: choose a feeling, set an intensity, and add an optional note. A recent list and a 7-day mood strip show how the week has felt. Calming tools include box breathing and a 5-4-3-2-1 grounding exercise.
 
+**Cycle** is for period tracking and a simple prediction of the next expected start. Reminders are added automatically to the Coming Up list.
+
+**Find My Things** — a place to note where everyday items were last put down
+
+**Learn about ADHD** — a Neurodiversity Corner, primers on ADHD strengths, how it presents differently in girls, youth-facing resources, and more.
+
+**Discover Opportunities** is a filterable list of camps, clubs, competitions, and similar programs. Favorites are saved on the device. Links open in an in-app browser.
+
 **Me** holds the profile: display name, a short bio, likes and dislikes, an illustrated avatar, app skins, notification settings, and a replayable tour of the app.
 
 The toolkit also includes:
-
-- **Cycle** — period tracking and a simple prediction of the next expected start
 - **Music** — a built-in library with a mini player that can play alongside a focus realm
 - **Events** — birthdays, exams, and other dates, with optional reminders
 - **Timer** — a standalone timer separate from Focus
-- **Find My Things** — a place to note where everyday items were last put down
 - **Reminders** — one-time, every day, or selected weekdays, with custom categories
-- **Learn about ADHD** — a short Neurodiversity Corner, with resource links opened inside the app
-
-**Spark Circle** is an invite-only space for sending short encouragements and sharing quests. Circles and messages live on this device. Seeded members can reply with a small set of warm demo responses.
-
-**Discover Opportunities** is a filterable list of camps, clubs, competitions, and similar programs. Favorites are saved on the device. Links open in an in-app browser.
 
 ## Getting started
 
@@ -64,3 +70,20 @@ spark/
 ## Skins
 
 The Me tab can switch the app’s color wash among Spark, Enchanted Forest, Ocean Calm, Starlit Sky, and Cloud Kingdom. The interface stays in light appearance.
+
+## Accessiblity
+ADHD in girls often includes load from sound, light, motion, cluttered screens, and too many choices at once. Spark is designed so the product does not add another wave of input. The home screen uses a cream base, soft color washes, and a small toolkit grid instead of a dense dashboard. Focus Realms let the user choose the environment: Enchanted Forest, Cozy Library, Ocean Calm, Starlit Sky, or Clouds, each with its own palette, particles, and audio, so someone who is overstimulated can pick a quieter or steadier scene. Feelings tools treat being overwhelmed as a first-class state and offer paced breathing and grounding.
+
+Reduce Motion is implemented in the SwiftUI codebase. When iOS Reduce Motion is on, home fade-ins appear immediately; the logo does not breathe or sparkle; primary buttons do not spring; the Focus tab icon does not pulse; realm particles simplify; music-list stagger is off; the grounding modal uses opacity only; breathing phase changes do not use long ease animations; the timer ring does not animate; quest confetti is skipped. Haptics are optional and not required to complete a task. The app currently locks to light mode, which keeps contrast predictable; Dark Mode is not yet offered.
+
+### VoiceOver and structure
+Accessibility modifiers appear across about 50 Swift files (200+ uses). Icon-only controls have spoken labels (Close, Save, Back to Home, play/pause, timer and focus controls, invite/copy). Time is spoken as durations. Circle messages, mood-strip days, feelings banners, opportunities, and Learn links have descriptive labels; external links announce that they open in an in-app browser. Hints and values cover quest progress (“3 of 5 steps done”), step state, bookmarks, and reminder on/off. Selected traits mark chips and pickers (moods, realms, durations, sounds, skins, filters). Decorative gradients and redundant emojis are hidden from VoiceOver; related elements are combined so a screen reader hears one coherent item.
+
+### Cognitive access
+Quests use short steps and templates (study, tidy, get ready). Focus sessions are 10, 15, 25, or 45 minutes. Mood check-ins use plain words and emojis. Language is strengths-based. Spark Circles (community) are invite-only.
+Standards and gaps
+
+The build follows Apple Human Interface Guidelines and universal-design aims. VoiceOver coverage is on Quests, Focus, Feelings, Timer, Music, Reminders, Events, Cycle, Find My Things, Circle, Opportunities, Learn, and Me. 
+### Features to be implemented 
+Dynamic Type (type uses fixed sizes), Increase Contrast and Differentiate Without Color, Reduce Motion on remaining animations, Formal WCAG 2.2 AA audit and usability testing. 
+
