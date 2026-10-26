@@ -67,6 +67,9 @@ spark/
 
 `sparkApp` creates one store per feature and passes them through the SwiftUI environment. Each store saves its own data with `UserDefaults`. Illustrated avatars are fetched when needed and cached.
 
+## Architecture and Design
+![](https://github.com/aap-ndr/spark/blob/main/Spark%20App%20-%20Architecture%20and%20Design.png)
+
 ## Skins
 
 The Me tab can switch the app’s color wash among Spark, Enchanted Forest, Ocean Calm, Starlit Sky, and Cloud Kingdom. The interface stays in light appearance.
