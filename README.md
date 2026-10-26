@@ -4,7 +4,7 @@ What does an app designed by and for ADHD girls look like when belonging matters
 
 Spark is a native iOS app for empowering ADHD girls. Explore Spark Circles for affirmations and body doubling on tasks with trusted friends, small-step Quests, Focus Realms with music, Feelings Check, Period Tracker, Neurodiversity Corner for strengths-based understanding, Discover Opportunities for camps and programs, and more. 
 
-Built by a 2e/ADHD student with neuromuscular deficits in her right hand, accessibility is built into Spark’s interface, with special care for hand mobility, sensory overwhelm, and cognitive access. Spark was 1 of 5 selected in a highly competitive national challenge for live stage demo at #TodayAtApple (San Francisco Union Square) by Kode With Klossy and Apple mentors. https://www.youtube.com/watch?v=REu42dOHBcc. Lived experiences, feedback through co-design, and the Apple Union Square demo shaped Spark v1.0.
+Built by a 2e/ADHD student with neuromuscular deficits in her right hand, accessibility is built into Spark’s interface, with special care for hand mobility, sensory overwhelm, and cognitive access. Spark was 1 of 5 selected in a highly competitive national challenge for live stage demo at #TodayAtApple (San Francisco Union Square) by Kode With Klossy and Apple mentors. https://www.youtube.com/watch?v=REu42dOHBcc. Lived experience, feedback from ADHD girls, and the Apple Union Square demo shaped Spark v1.0.
 
 The app is built with SwiftUI. Personal data stays on the device.
 
