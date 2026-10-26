@@ -1,24 +1,48 @@
 //
 //  ContentView.swift
-//  spark
+//  Spark
 //
-//  Created by Aashna Parsa on 7/19/26.
+//  Purpose:
+//  Root view that gates between onboarding and the main tab interface.
+//
+//  Responsibilities:
+//  • Observes profile hydration state from AppProfileStore.
+//  • Routes new users to onboarding and returning users to MainTabView.
+//  • Propagates the active skin through the environment.
 //
 
 import SwiftUI
 
+/// Root view that routes between onboarding and the main tab interface.
 struct ContentView: View {
+    @Environment(AppProfileStore.self) private var profileStore
+    @Environment(SkinStore.self) private var skinStore
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        Group {
+            if profileStore.hasProfile {
+                MainTabView()
+            } else {
+                OnboardingView()
+            }
         }
-        .padding()
+        .animation(.easeInOut(duration: 0.25), value: profileStore.hasProfile)
+        .environment(\.sparkSkin, skinStore.activeSkin)
     }
 }
 
-#Preview {
+#Preview("Onboarding") {
     ContentView()
+        .environment(AppProfileStore())
+        .environment(SkinStore())
+        .preferredColorScheme(.light)
+}
+
+#Preview("Main Tabs") {
+    let store = AppProfileStore()
+    store.createProfile(displayName: "Bella", avatarName: SparkAvatarCatalog.defaultOnboardingAvatarName)
+    return ContentView()
+        .environment(store)
+        .environment(SkinStore())
+        .preferredColorScheme(.light)
 }
