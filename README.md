@@ -1,6 +1,6 @@
 # Spark - A Neurodiversity-Affirming Community App for ADHD Girls
 
-What does an app designed by and for ADHD girls look like when belonging matters as much as productivity? 
+*What does an app designed by and for ADHD girls look like when belonging matters as much as productivity?* 
 
 Spark is a native iOS app for empowering ADHD teen girls. Explore Spark Circles for affirmations and body doubling on tasks with trusted friends, small-step Quests, Focus Realms with music, Feelings Check, Period Tracker, Neurodiversity Corner for strengths-based understanding, Discover Opportunities for camps and programs, and more. 
 
