@@ -4,14 +4,14 @@
 
 Spark is a native iOS app for empowering ADHD teen girls. Explore Spark Circles for affirmations and body doubling on tasks with trusted friends, small-step Quests, Focus Realms with music, Feelings Check, Period Tracker, Neurodiversity Corner for strengths-based understanding, Discover Opportunities for camps and programs, and more. 
 
-Built by Aashna Parsa, founder of [Youth for Neurodiversity Inc.](https://YouthforND.org/spark), a 2e/ADHD student with neuromuscular deficits in her right hand, accessibility is built into Spark’s interface, with special care for hand mobility, sensory overwhelm, and cognitive access. Spark was 1 of 5 selected in a highly competitive national challenge for live stage demo at #TodayAtApple (San Francisco Union Square) by Kode With Klossy and Apple mentors. https://www.youtube.com/watch?v=REu42dOHBcc. Lived experience, feedback from ADHD girls, and the Apple Union Square demo shaped Spark v1.0.
+Built by Aashna Parsa, founder of [Youth for Neurodiversity Inc.](https://YouthforND.org/spark), a 2e/ADHD student with neuromuscular deficits in her right hand, accessibility is built into Spark’s interface, with special care for hand mobility, sensory overwhelm, and cognitive access. Spark was 1 of 5 selected in a highly competitive national challenge for live stage demo at #TodayAtApple (San Francisco Union Square) by Kode With Klossy and Apple mentors. https://www.youtube.com/watch?v=REu42dOHBcc. Lived experience, feedback from ADHD girls, and the Apple Union Square demo shaped Spark. To join our users and a Youth Participatory Action Research project, click [here](https://youthfornd.org/spark#spark-interest-form).
 
 Spark is built entirely in Swift and SwiftUI using a modular, feature-first architecture. It separates the presentation layer, reusable UI components, observable feature stores, and Codable data models with local persistence. The app uses custom algorithms for reminder scheduling, focus timers, upcoming-event aggregation, and quest progress tracking. SwiftUI's Observation framework enables efficient, reactive updates, while reusable components improve code maintainability and app performance.
 
 Spark incorporates sensory-friendly accessibility throughout its design, including reduced motion, optional haptics, VoiceOver compatibility, plain language, short steps, and predictable focus-session lengths. Its light-mode interface provides consistent visual contrast. 
 The app is built with SwiftUI. Personal data stays on the device.
 
-## v1.0 Features
+## Features
 
 **Home** opens with a time-based greeting, a daily affirmation, and a Coming up list that gathers quest reminders, events, cycle predictions, and more. From here you can open Spark Circle, Discover Opportunities, and the toolkit.
 
