@@ -6,6 +6,9 @@ Spark is a native iOS app for empowering ADHD teen girls. Explore Spark Circles 
 
 Built by a 2e/ADHD student with neuromuscular deficits in her right hand, accessibility is built into Spark’s interface, with special care for hand mobility, sensory overwhelm, and cognitive access. Spark was 1 of 5 selected in a highly competitive national challenge for live stage demo at #TodayAtApple (San Francisco Union Square) by Kode With Klossy and Apple mentors. https://www.youtube.com/watch?v=REu42dOHBcc. Lived experience, feedback from ADHD girls, and the Apple Union Square demo shaped Spark v1.0.
 
+Spark is built entirely in Swift and SwiftUI using a modular, feature-first architecture. It separates the presentation layer, reusable UI components, observable feature stores, and Codable data models with local persistence. The app uses custom algorithms for reminder scheduling, focus timers, upcoming-event aggregation, and quest progress tracking. SwiftUI's Observation framework enables efficient, reactive updates, while reusable components improve code maintainability and app performance.
+
+Spark incorporates sensory-friendly accessibility throughout its design, including reduced motion, optional haptics, VoiceOver compatibility, plain language, short steps, and predictable focus-session lengths. Its light-mode interface provides consistent visual contrast. 
 The app is built with SwiftUI. Personal data stays on the device.
 
 ## v1.0 Features
